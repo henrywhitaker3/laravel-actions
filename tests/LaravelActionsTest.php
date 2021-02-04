@@ -32,7 +32,7 @@ class ExampleMultiArgumentAction implements ActionInterface
 {
     public function run(string $text = null, string $text2 = null)
     {
-        echo $text . $text2;
+        echo $text.$text2;
     }
 }
 
@@ -88,6 +88,6 @@ class ActionTest extends TestCase
         run(ExampleMultiArgumentAction::class, [$text, $text2]);
         $output = ob_get_clean();
 
-        $this->assertEquals($text . $text2, $output);
+        $this->assertEquals($text.$text2, $output);
     }
 }
