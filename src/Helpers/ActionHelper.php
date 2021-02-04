@@ -13,10 +13,6 @@ if (! function_exists('run')) {
      */
     function run($action, $arguments = [])
     {
-        /**
-         * If we're not passing an instance of a class implementing the interface,
-         * then try to get an instance that is bound in the Service Container.
-         */
         if (! $action instanceof ActionInterface) {
             $action = app($action);
         }
