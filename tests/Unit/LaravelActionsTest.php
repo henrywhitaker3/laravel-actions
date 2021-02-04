@@ -12,7 +12,7 @@ class ActionTest extends \Orchestra\Testbench\TestCase
     {
         return ['Henrywhitaker3\LaravelActions\LaravelActionsServiceProvider'];
     }
-    
+
     /**
      * Run an action when it's already been instantiated.
      *
