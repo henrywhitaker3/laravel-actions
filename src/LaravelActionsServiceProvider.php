@@ -20,6 +20,10 @@ class LaravelActionsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
+
+            $this->publishes([
+                __DIR__ . '/Stubs/ActionStub.php' => resource_path('stubs/ActionStub.php'),
+            ], 'stubs');
         }
 
         require_once __DIR__.'/Helpers/ActionHelper.php';

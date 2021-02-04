@@ -30,7 +30,9 @@ class MakeActionCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../Stubs/ActionStub.php';
+        return file_exists(resource_path('stubs/ActionStub.php'))
+            ? resource_path('stubs/ActionStub.php')
+            : __DIR__.'/../Stubs/ActionStub.php';
     }
 
     /**
