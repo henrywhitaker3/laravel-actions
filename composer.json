@@ -9,7 +9,6 @@
             "homepage": "https://github.com/henrywhitaker3"
         }
     ],
-    "minimum-stability": "dev",
     "homepage": "https://github.com/henrywhitaker3/laravel-actions",
     "keywords": ["Laravel", "LaravelActions"],
     "require": {
