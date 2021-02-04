@@ -12,7 +12,7 @@ class MakeActionCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'make:action {name}';
+    protected $name = 'make:action';
 
     /**
      * The console command description.
