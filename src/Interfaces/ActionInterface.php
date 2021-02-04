@@ -5,7 +5,7 @@ namespace Henrywhitaker3\LaravelActions\Interfaces;
 interface ActionInterface
 {
     /**
-     * Run the action
+     * Run the action.
      *
      * @return mixed
      */

@@ -30,7 +30,7 @@ class MakeActionCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__ . '/../Stubs/ActionStub.php';
+        return __DIR__.'/../Stubs/ActionStub.php';
     }
 
     /**
@@ -42,7 +42,7 @@ class MakeActionCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Actions';
+        return $rootNamespace.'\Actions';
     }
 
     /**

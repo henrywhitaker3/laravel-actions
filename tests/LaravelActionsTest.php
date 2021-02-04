@@ -14,7 +14,7 @@ class ExampleInstantiatedAction implements ActionInterface
         $this->text = $text;
     }
 
-    public function run() : void
+    public function run()
     {
         echo $this->text;
     }
@@ -22,7 +22,7 @@ class ExampleInstantiatedAction implements ActionInterface
 
 class ExampleNonInstantiatedAction implements ActionInterface
 {
-    public function run(string $text = null) : void
+    public function run(string $text = null)
     {
         echo $text;
     }
@@ -30,7 +30,7 @@ class ExampleNonInstantiatedAction implements ActionInterface
 
 class ExampleMultiArgumentAction implements ActionInterface
 {
-    public function run(string $text = null, string $text2 = null) : void
+    public function run(string $text = null, string $text2 = null)
     {
         echo $text . $text2;
     }
@@ -39,7 +39,7 @@ class ExampleMultiArgumentAction implements ActionInterface
 class ActionTest extends TestCase
 {
     /**
-     * Run an action when it's already been instantiated
+     * Run an action when it's already been instantiated.
      *
      * @test
      * @return void
@@ -57,7 +57,7 @@ class ActionTest extends TestCase
     }
 
     /**
-     * Run an action when it's not been instantiated
+     * Run an action when it's not been instantiated.
      *
      * @test
      * @return void
@@ -74,7 +74,7 @@ class ActionTest extends TestCase
     }
 
     /**
-     * Run an action when it's not been instantiated
+     * Run an action when it's not been instantiated.
      *
      * @test
      * @return void

@@ -22,7 +22,7 @@ class LaravelActionsServiceProvider extends ServiceProvider
             $this->bootForConsole();
         }
 
-        require_once(__DIR__.'/Helpers/ActionHelper.php');
+        require_once __DIR__.'/Helpers/ActionHelper.php';
     }
 
     /**

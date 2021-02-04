@@ -17,7 +17,7 @@ class DummyClass implements ActionInterface
     }
 
     /**
-     * Run the action
+     * Run the action.
      *
      * @return mixed
      */
