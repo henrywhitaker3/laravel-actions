@@ -7,6 +7,7 @@ if (! function_exists('run')) {
      * Run a given action.
      *
      * @param ActionInterface|string $action
+     * @param mixed $arguments
      * @return mixed
      * @throws Illuminate\Contracts\Container\BindingResolutionException
      */
