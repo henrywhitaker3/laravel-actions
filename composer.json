@@ -1,7 +1,7 @@
 {
     "name": "henrywhitaker3/laravelactions",
     "description": "Simple actions package for Laravel",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
             "name": "Henry Whitaker",
