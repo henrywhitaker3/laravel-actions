@@ -1,5 +1,6 @@
 # LaravelActions
 
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/henrywhitaker3/laravel-actions/PHP%20Composer/master?label=tests&style=flat-square)
 [![StyleCI](https://github.styleci.io/repos/335909164/shield?branch=master)](https://github.styleci.io/repos/335909164)
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
