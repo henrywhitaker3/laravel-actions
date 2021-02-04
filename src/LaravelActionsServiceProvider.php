@@ -22,7 +22,7 @@ class LaravelActionsServiceProvider extends ServiceProvider
             $this->bootForConsole();
 
             $this->publishes([
-                __DIR__ . '/Stubs/ActionStub.php' => resource_path('stubs/ActionStub.php'),
+                __DIR__.'/Stubs/ActionStub.php' => resource_path('stubs/ActionStub.php'),
             ], 'stubs');
         }
 
