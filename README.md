@@ -42,7 +42,7 @@ run(SomeAction::class, [$arg1, $arg2]);
 
 ## License
 
-MIT license. Please see the [license file](license.md) for more information.
+MIT license. Please see the [license file](LICENSE.md) for more information.
 
 [icon-tests]: https://img.shields.io/github/workflow/status/henrywhitaker3/laravel-actions/PHP%20Composer/master?label=Tests&logoColor=%234c1&style=flat-square
 [icon-styleci]: https://github.styleci.io/repos/335909164/shield?branch=master
