@@ -2,8 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][https://github.styleci.io/repos/335909164]
+[![StyleCI](https://github.styleci.io/repos/335909164/shield?branch=master)](https://github.styleci.io/repos/335909164)
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
