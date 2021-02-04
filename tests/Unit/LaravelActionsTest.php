@@ -2,42 +2,17 @@
 
 namespace Henrywhitaker3\LaravelActions\Tests\Unit;
 
-use Henrywhitaker3\LaravelActions\Interfaces\ActionInterface;
-use PHPUnit\Framework\TestCase;
+use Henrywhitaker3\LaravelActions\Tests\Utils\ExampleInstantiatedAction;
+use Henrywhitaker3\LaravelActions\Tests\Utils\ExampleMultiArgumentAction;
+use Henrywhitaker3\LaravelActions\Tests\Utils\ExampleNonInstantiatedAction;
 
-class ExampleInstantiatedAction implements ActionInterface
+class ActionTest extends \Orchestra\Testbench\TestCase
 {
-    public string $text;
-
-    public function __construct(string $text)
+    protected function getPackageProviders($app)
     {
-        $this->text = $text;
+        return ['Henrywhitaker3\LaravelActions\LaravelActionsServiceProvider'];
     }
-
-    public function run()
-    {
-        echo $this->text;
-    }
-}
-
-class ExampleNonInstantiatedAction implements ActionInterface
-{
-    public function run(string $text = null)
-    {
-        echo $text;
-    }
-}
-
-class ExampleMultiArgumentAction implements ActionInterface
-{
-    public function run(string $text = null, string $text2 = null)
-    {
-        echo $text.$text2;
-    }
-}
-
-class ActionTest extends TestCase
-{
+    
     /**
      * Run an action when it's already been instantiated.
      *
