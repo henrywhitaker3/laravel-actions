@@ -9,7 +9,7 @@
             "homepage": "https://github.com/henrywhitaker3"
         }
     ],
-    "homepage": "https://github.com/henrywhitaker3/laravelactions",
+    "homepage": "https://github.com/henrywhitaker3/laravel-actions",
     "keywords": ["Laravel", "LaravelActions"],
     "require": {
         "illuminate/support": "~7|~8"
