@@ -11,16 +11,12 @@ if (! function_exists('run')) {
      * @return mixed
      * @throws Illuminate\Contracts\Container\BindingResolutionException
      */
-    function run($action, $arguments = [])
+    function run($action, ...$arguments)
     {
         if (! $action instanceof ActionInterface) {
             $action = app($action);
         }
 
-        if (! is_array($arguments)) {
-            $arguments = [$arguments];
-        }
-
-        return call_user_func_array([$action, 'run'], $arguments);
+        return $action->run(...$arguments);
     }
 }

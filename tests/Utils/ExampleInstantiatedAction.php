@@ -15,6 +15,6 @@ class ExampleInstantiatedAction implements ActionInterface
 
     public function run()
     {
-        echo $this->text;
+        return $this->text;
     }
 }

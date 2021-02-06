@@ -4,10 +4,10 @@ namespace Henrywhitaker3\LaravelActions\Tests\Utils;
 
 use Henrywhitaker3\LaravelActions\Interfaces\ActionInterface;
 
-class ExampleNonInstantiatedAction implements ActionInterface
+class ExampleNoArgumentAction implements ActionInterface
 {
-    public function run(string $text = null)
+    public function run()
     {
-        return $text;
+        return 'Hello';
     }
 }

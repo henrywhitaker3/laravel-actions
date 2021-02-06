@@ -33,11 +33,11 @@ Or you can use the `run` helper function:
 run(SomeAction::class);
 ```
 
-You can pass arguments for the action's run method as the second argument in the helper function:
+You can pass arguments for the action's run method as the subsequent arguments for the helper method:
 
 ```php
 run(SomeAction::class, $arg);
-run(SomeAction::class, [$arg1, $arg2]);
+run(SomeAction::class, $arg1, $arg2);
 ```
 
 ## License

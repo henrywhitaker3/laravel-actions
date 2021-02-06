@@ -8,6 +8,6 @@ class ExampleMultiArgumentAction implements ActionInterface
 {
     public function run(string $text = null, string $text2 = null)
     {
-        echo $text.$text2;
+        return $text.$text2;
     }
 }
